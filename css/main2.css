@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif; }
+
+.mg-b {
+  margin-bottom: 10px; }
+
+#palette {
+  text-align: center;
+  color: gray; }
+  #palette .row:first-child {
+    text-align: center; }
+    #palette .row:first-child h2 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 5em;
+      font-weight: normal; }
+    #palette .row:first-child hr {
+      border: 1px solid gray;
+      width: 250px;
+      margin-top: 0px; }
+  #palette .color {
+    text-align: center;
+    text-transform: uppercase;
+    height: 150px; }
+  #palette .a {
+    background-color: #69d2e7; }
+  #palette .b {
+    background-color: #a7dbdb; }
+  #palette .c {
+    background-color: #e0e4cc; }
+  #palette .d {
+    background-color: #f38630; }
+  #palette .e {
+    background-color: #fa6900; }
+  #palette .f {
+    background-color: #69d2e7; }
+  #palette .g {
+    background-color: #542733; }
+  #palette .h {
+    background-color: #e0e4cc; }
+  #palette .i {
+    background-color: #c6d5cd; }
+  #palette .j {
+    background-color: #fdf200; }
+  #palette .fe {
+    background-color: #db3340; }
+  #palette .ga {
+    background-color: #e8b71a; }
+  #palette .ha {
+    background-color: #f7eac8; }
+  #palette .ia {
+    background-color: #1fda9a; }
+  #palette .ja {
+    background-color: #28abe3; }
+  #palette .k {
+    background-color: #588c73; }
+  #palette .l {
+    background-color: #f2e394; }
+  #palette .m {
+    background-color: #f2ae72; }
+  #palette .n {
+    background-color: #d96459; }
+  #palette .o {
+    background-color: #8c4646; }
+  #palette .p {
+    background-color: #d0c91f; }
+  #palette .q {
+    background-color: #85c4b9; }
+  #palette .r {
+    background-color: #008bba; }
+  #palette .s {
+    background-color: #df514c; }
+  #palette .t {
+    background-color: #dc403b; }
+
+#aboutus {
+  padding: 80px 0px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.6);
+  background-color: #2C3E50;
+  color: white; }
+  #aboutus .row:first-child {
+    text-align: center; }
+    #aboutus .row:first-child h2 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 5em;
+      font-weight: normal; }
+    #aboutus .row:first-child hr {
+      border: 1px solid gray;
+      width: 250px;
+      margin-top: 0px; }
+  #aboutus p:nth-child(2) {
+    margin-bottom: 70px; }
+  #aboutus img {
+    width: 90%;
+    margin: 0% 5%; }
+  #aboutus .progress-bar-success {
+    background-color: #E67E22; }
+  #aboutus .progress {
+    margin-top: 13px;
+    border-radius: 0px;
+    height: 10px;
+    background-color: #DCD5D5;
+    border: 2px solid #DCD5D5;
+    margin-bottom: 0px; }
+  #aboutus span {
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-size: 0.9em;
+    width-space: 1px; }
+
+#we {
+  background-color: #27AD60;
+  color: white; }
+  #we .row:first-child {
+    text-align: center; }
+    #we .row:first-child h2 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 5em;
+      font-weight: normal; }
+    #we .row:first-child hr {
+      border: 1px solid gray;
+      width: 250px;
+      margin-top: 0px; }
+  #we .bckhover, #we #team .personal, #team #we .personal {
+    width: 280px;
+    margin: 0 auto;
+    padding: 50px 10px; }
+    #we .bckhover .bck, #we #team .personal .bck, #team #we .personal .bck, #we .bckhover .bckimg, #we #team .personal .bckimg, #team #we .personal .bckimg {
+      background-color: #E67E22;
+      width: 140px;
+      margin: 0 auto;
+      padding: 20px 0px; }
+    #we .bckhover .bckimg, #we #team .personal .bckimg, #team #we .personal .bckimg {
+      background-image: url("../img/icon-bg.png");
+      background-size: cover;
+      background-color: #2C3E50; }
+    #we .bckhover h3, #we #team .personal h3, #team #we .personal h3 {
+      margin-top: 40px;
+      font-weight: normal; }
+    #we .bckhover hr, #we #team .personal hr, #team #we .personal hr {
+      border-color: transparent; }
+    #we .bckhover:hover, #we #team .personal:hover, #team #we .personal:hover {
+      transition: all 2s;
+      color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(44, 62, 80, 0.5); }
+      #we .bckhover:hover .bckimg, #we #team .personal:hover .bckimg, #team #we .personal:hover .bckimg {
+        background-image: none; }
+      #we .bckhover:hover h3, #we #team .personal:hover h3, #team #we .personal:hover h3 {
+        color: #E67E22; }
+      #we .bckhover:hover .bck, #we #team .personal:hover .bck, #team #we .personal:hover .bck, #we .bckhover:hover .bckimg, #we #team .personal:hover .bckimg, #team #we .personal:hover .bckimg {
+        transform: rotate(45deg);
+        transition: all 2s;
+        background-color: #A96931; }
+      #we .bckhover:hover hr, #we #team .personal:hover hr, #team #we .personal:hover hr {
+        border-color: rgba(255, 255, 255, 0.6); }
+
+.btn {
+  text-transform: uppercase;
+  color: white;
+  background-color: #443E44;
+  padding: 10px 20px;
+  border: none; }
+  .btn:hover {
+    background-color: #2C3E50;
+    color: #DCD5D5;
+    box-shadow: 0px 0px 5px white inset; }
+
+#team {
+  padding: 80px 0px;
+  background-color: #27AD60;
+  color: white; }
+  #team .row:first-child {
+    text-align: center; }
+    #team .row:first-child h2 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 5em;
+      font-weight: normal; }
+    #team .row:first-child hr {
+      border: 1px solid gray;
+      width: 250px;
+      margin-top: 0px; }
+  #team .personal {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 50px 25px; }
+  #team img {
+    width: 140px;
+    height: 140px; }
+  #team small {
+    color: black;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    font-weight: 600; }
+  #team .icono {
+    font-size: 20px;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.6); }
+
+#price .row:first-child {
+  text-align: center; }
+  #price .row:first-child h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 5em;
+    font-weight: normal; }
+  #price .row:first-child hr {
+    border: 1px solid gray;
+    width: 250px;
+    margin-top: 0px; }
+#price table {
+  border: 1px solid #27AD60; }
+  #price table tr th {
+    text-align: center; }
+
+/*# sourceMappingURL=main2.css.map */

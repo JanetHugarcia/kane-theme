@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+$azul:#2C3E50;
+$gris:rgba(255,255,255,.6);
+$naranja:#A96931;
+$verde:#27AD60;
+body{
+	font-size:14px;
+	font-family: 'Raleway', sans-serif;
+}
+.mg-b{
+	margin-bottom:10px;
+}
+@mixin pd{
+	padding: 80px 0px;
+}
+@mixin textcolor($color){
+	color:$color;
+}
+@mixin mayuscula{
+	text-transform:uppercase;
+}
+@mixin fondo($color){
+	background-color:$color;
+}
+@mixin centro{
+	text-align:center;
+}
+@mixin subtitulo{
+	.row{
+		&:first-child{
+			@include centro;
+			h2{
+				@include mayuscula;
+				margin:0;
+				font-size:5em;
+				font-weight: normal;
+			}
+			hr{
+				border:1px solid gray;
+				width: 250px;
+				margin-top: 0px;
+			}
+		}	
+	}
+}
+@mixin colorpropiedad{
+	@include centro;
+	@include mayuscula;
+	height:150px;
+}
+
+#palette {
+	@include centro;
+	color:gray;
+	@include subtitulo;
+
+	.color{
+		@include colorpropiedad;
+
+	}
+	.a{
+		@include fondo(#69d2e7);
+	}
+	.b{
+		@include fondo(#a7dbdb);
+	}
+	.c{
+		@include fondo(#e0e4cc);
+	}
+	.d{
+		@include fondo(#f38630);
+	}
+	.e{
+		@include fondo(#fa6900);
+	}
+	.f{
+		@include fondo(#69d2e7);
+	}
+	.g{
+		@include fondo(#542733);
+	}
+	.h{
+		@include fondo(#e0e4cc);
+	}
+	.i{
+		@include fondo(#c6d5cd);
+	}
+	.j{
+		@include fondo(#fdf200);
+	}
+	.fe{
+		@include fondo(#db3340);
+	}
+	.ga{
+		@include fondo(#e8b71a);
+	}
+	.ha{
+		@include fondo(#f7eac8);
+	}
+	.ia{
+		@include fondo(#1fda9a);
+	}
+	.ja{
+		@include fondo(#28abe3);
+	}
+	.k{
+		@include fondo(#588c73);
+	}
+	.l{
+		@include fondo(#f2e394);
+	}
+	.m{
+		@include fondo(#f2ae72);
+	}
+	.n{
+		@include fondo(#d96459);
+	}
+	.o{
+		@include fondo(#8c4646);
+	}
+	.p{
+		@include fondo(#d0c91f);
+	}
+	.q{
+		@include fondo(#85c4b9);
+	}
+	.r{
+		@include fondo(#008bba);
+	}
+	.s{
+		@include fondo(#df514c);
+	}
+	.t{
+		@include fondo(#dc403b);
+	}
+}
+#aboutus {
+	padding:80px 0px;
+	box-shadow:2px 0px 10px rgba(0,0,0,.6);
+	@include fondo(#2C3E50);	
+	color:white;
+	@include subtitulo;
+	
+	p{
+		&:nth-child(2){
+			margin-bottom: 70px;
+		}
+	}
+	img{
+		width: 90%;
+		margin:0% 5%;
+	}
+	.progress-bar-success {
+    	background-color: #E67E22;
+	}
+	.progress {
+		margin-top:13px;
+		border-radius:0px;
+   		height: 10px;
+	    background-color: #DCD5D5;
+	    border: 2px solid #DCD5D5;
+	    margin-bottom: 0px;
+	}
+	span{
+		@include mayuscula;
+		margin-left:5px;
+		font-size: 0.9em;
+		width-space:1px;
+	}
+}
+#we{
+	@include fondo(#27AD60);
+	@include textcolor(white);
+	@include subtitulo;
+
+	.bckhover{
+		width: 280px;
+		margin:0 auto;
+    	padding: 50px 10px;
+    	.bck{
+			@include fondo(#E67E22);
+			width: 140px;
+			margin:0 auto;
+			padding:20px 0px;
+		}
+		.bckimg{
+			@extend .bck;
+			background-image:url('../img/icon-bg.png');
+			background-size:cover;
+			background-color:$azul;
+		}
+		h3{
+				margin-top: 40px;
+				font-weight: normal;
+			}
+		hr{
+			border-color: transparent;
+		}
+		&:hover{
+			transition:all 2s;
+			@include textcolor($gris);
+			@include fondo(rgba(44, 62, 80,.5));
+			.bckimg{
+				background-image: none;
+			}
+			h3{
+				@include textcolor(#E67E22);
+			}
+			.bck{
+				transform:rotate(45deg);
+				transition:all 2s;
+				@include fondo($naranja);
+			}
+			hr{
+				border-color:$gris;
+			}
+		}
+	}
+}
+.btn{
+	@include mayuscula;
+	@include textcolor(white);
+	@include fondo(#443E44);
+	padding:10px 20px;
+	border:none;
+	&:hover{
+		@include fondo($azul);
+		@include textcolor(#DCD5D5);
+		box-shadow:0px 0px 5px white inset;
+	}
+}
+#team{
+	@include pd;
+	@include fondo(#27AD60);
+	@include textcolor(white);
+	@include subtitulo;
+
+	.personal{
+		@include textcolor($gris);
+		@include centro;
+		@extend .bckhover;
+		padding: 50px 25px;
+	}
+	img{
+		width: 140px;
+		height: 140px;
+	}
+	small{
+		color: black;
+	    display: block;
+	    margin-bottom: 30px;
+	    font-size: 0.8em;
+	    font-weight: 600;
+	}
+	.icono{
+		font-size: 20px;
+		margin:5px; 
+		@include textcolor($gris);
+	}
+}
+#price{
+	@include subtitulo;
+	table{
+		border:1px solid $verde;
+		tr{
+			th{
+				text-align: center;
+			}
+		}
+	}
+}
